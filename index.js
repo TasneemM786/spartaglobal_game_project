@@ -1,6 +1,7 @@
 $(function(){
 
   // accessing elements on the page
+  var box = $('.redBox');
   var time = 10;
   var timer = $('.timer');
   // set the timer to be 10
@@ -14,8 +15,9 @@ $(function(){
     if (time > 0) {
       $(timer).html(time - 1);
       time -= 1;
-    }else {
+    } else {
       // call the function to change the box to green
+      $(".redBox").css("background-color", "green");
     }
   }
 
