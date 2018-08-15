@@ -9,7 +9,7 @@ $(function(){
 
   // this will run every second forever
   var explosionTimer = setInterval(countDown, 1000);
-  var showRandomBow = setInterval(createBox, 1000);
+  var showRandomBow = setInterval(createBox, 500);
 
   // function to move redBox
 
@@ -28,7 +28,7 @@ $(function(){
         top: "+=40vh",
         width: "5px",
       }, 1500 );
-      // $(".redBox").stop();
+      $(".redBox").stop();
       clearInterval(explosionTimer);
 
     }
@@ -37,5 +37,19 @@ $(function(){
   // create function to create redBox
     // use jquery to create a div
     // display on the pay $(body).append("element")
-    
+
+    function createBox() {
+      $("body").append("<div class='redBox'></div>");
+      $(".redBox").css("background-color", "green");
+      $(".redBox").css("position", "absolute")
+      $(".redBox").animate({
+        left: "+="+Math.random()*80+"vw",
+        top: "+="+Math.random()*80+"vh",
+        width: "5px",
+      }, 2000 );
+      // $(".redBox").stop();
+      clearInterval(explosionTimer);
+
+
+    }
 })
