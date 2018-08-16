@@ -1,7 +1,49 @@
-.redBox {
-  width: 30px;
+.game {
   border: 2px solid black;
-  padding: 25px;
-  margin: 25px;
+  height: 650px;
+  width: 1300px;
+  margin: auto;
+  margin-top: 48px;
+}
+
+.entrance {
+  width: 60px;
+  height: 20px;
+  border: 2px solid black;
+  margin: auto;
+}
+
+.redBox {
+  width: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
   background-color:red;
+  position: absolute;
+  left: 47vw;
+  top: 51px;
+}
+
+.cherryBox {
+  width: 300px;
+  height: 250px;
+  border: 3px solid black;
+  margin-left: 20px;
+  margin-top: 125px;
+}
+
+.blankBox {
+  width: 605px;
+  height: 350px;
+  /* background-color: gray; */
+  margin-top: 125px;
+}
+
+.bombBox {
+  width: 300px;
+  height: 250px;
+  border: 3px solid black;
+  margin-top: 125px;
+  margin-left: 55px;
+
 }
