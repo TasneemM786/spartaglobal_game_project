@@ -1,19 +1,63 @@
-.game {
-  border: 2px solid black;
-  height: 650px;
-  width: 1300px;
-  margin: auto;
-  margin-top: 48px;
+.random{width:300px;
+height:300px;}
+
+body {
+  background-image: url("threelads2.gif");
+  background-repeat: repeat;
+  background-size: 260px;
+  /* background-size: 100%; */
 }
 
+.game {
+  border: 3px solid black;
+  height: 575px;
+  width: 1300px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #ff9999;
+}
+
+.dropped {
+  background: yellow;
+}
+
+.dropped2 {
+  background: blue;
+}
 .entrance {
   width: 60px;
-  height: 20px;
+  height: 10px;
   border: 2px solid black;
   margin: auto;
+  background-color: red;
 }
 
 .redBox {
+  background-image: url("cherry.png");
+  background-size: 100%;
+  padding: 30px;
+  /* border-radius: 100px; */
+  /* border: 0px solid black; */
+  position: absolute;
+  left: 47vw;
+  top: 115px;
+}
+
+.blueBox {
+  background-image: url("bomb.png");
+  background-size: cover;
+  /* border-radius: 100px; */
+  width: 10px;
+  /* border: 2px solid black; */
+  padding: 30px;
+  border: 0px;
+  margin: 20px;
+  /* background-color:blue; */
+  position: absolute;
+  left: 47vw;
+  top: 115px;
+}
+/* .purpleBox {
   width: 20px;
   border: 2px solid black;
   padding: 20px;
@@ -22,18 +66,20 @@
   position: absolute;
   left: 47vw;
   top: 51px;
-}
+} */
 
 .cherryBox {
   width: 300px;
   height: 250px;
-  border: 3px solid black;
-  margin-left: 20px;
+  border: 7px solid black;
+  margin-left: 28px;
   margin-top: 125px;
+  background-color: #cccccc;
+
 }
 
 .blankBox {
-  width: 605px;
+  width: 580px;
   height: 350px;
   /* background-color: gray; */
   margin-top: 125px;
@@ -42,8 +88,10 @@
 .bombBox {
   width: 300px;
   height: 250px;
-  border: 3px solid black;
+  border: 7px solid black;
   margin-top: 125px;
   margin-left: 55px;
+  background-color: #cccccc;
+
 
 }
